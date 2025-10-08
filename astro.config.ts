@@ -8,7 +8,6 @@ import spectre from "./package/src";
 
 //import node from "@astrojs/node";
 import netlify from "@astrojs/netlify";
-import * as pagefind from "pagefind";
 import { spectreDark } from "./src/ec-theme";
 
 const {
