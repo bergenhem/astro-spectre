@@ -6,7 +6,8 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import spectre from "./package/src";
 
-import node from "@astrojs/node";
+//import node from "@astrojs/node";
+import netlify from "@astrojs/netlify";
 import { spectreDark } from "./src/ec-theme";
 
 const {
@@ -59,9 +60,7 @@ const config = defineConfig({
       // }
     }),
   ],
-  adapter: node({
-    mode: "standalone",
-  }),
+  adapter: netlify(),
 });
 
 export default config;
