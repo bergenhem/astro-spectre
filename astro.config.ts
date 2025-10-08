@@ -8,6 +8,7 @@ import spectre from "./package/src";
 
 //import node from "@astrojs/node";
 import netlify from "@astrojs/netlify";
+import * as pagefind from "pagefind";
 import { spectreDark } from "./src/ec-theme";
 
 const {
@@ -24,7 +25,7 @@ const {
 
 // https://astro.build/config
 const config = defineConfig({
-  site: "https://spectre.lou.gg",
+  site: "https://astro-spectre.netlify.app",
   output: "static",
   integrations: [
     expressiveCode({
